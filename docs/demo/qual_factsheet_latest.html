@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Qualitative Themes &amp; Mixed-Methods Insights (Synthetic RAPID-style Survey)</title>
+    <style>
+        body { font-family: "Source Sans Pro", "Segoe UI", Tahoma, sans-serif; margin: 40px; line-height: 1.6; color: #1e1e1e; }
+        h1 { font-size: 28px; margin-bottom: 0; }
+        h2 { margin-top: 32px; border-bottom: 2px solid #eee; padding-bottom: 4px; }
+        h3 { margin-top: 20px; color: #555; }
+        ul { padding-left: 20px; }
+        blockquote { border-left: 4px solid #0097a7; padding-left: 12px; background: #f5fafa; margin: 10px 0; }
+        table { border-collapse: collapse; width: 100%; margin-top: 10px; }
+        th, td { border: 1px solid #ccc; padding: 8px; font-size: 14px; }
+        th { background: #f0f0f0; }
+        .figure-grid { display: flex; flex-wrap: wrap; gap: 16px; }
+        .figure-card { flex: 1; min-width: 240px; }
+        .figure-card img { max-width: 100%; border: 1px solid #ddd; }
+        footer { margin-top: 32px; font-size: 12px; color: #666; }
+    </style>
+</head>
+<body>
+    <h1>Qualitative Themes &amp; Mixed-Methods Insights (Synthetic RAPID-style Survey)</h1>
+    <p><strong>Wave window:</strong> Jan–Mar 2024 &middot; <strong>Frames:</strong> households + providers &middot; Synthetic, reproducible data</p>
+
+    <h2>Key Findings</h2>
+    <ul>
+        
+        <li>Top themes overall: EMPLOYMENT_DISRUPTION (298), SCHEDULING_CONSTRAINTS (296), AFFORDABILITY (282). Household focus: EMPLOYMENT_DISRUPTION (215), SCHEDULING_CONSTRAINTS (214), AFFORDABILITY (188). Provider focus: AFFORDABILITY (94), EMPLOYMENT_DISRUPTION (83), SCHEDULING_CONSTRAINTS (82).</li>
+        
+        <li>Theme pairs surfacing together: EMPLOYMENT_DISRUPTION + SCHEDULING_CONSTRAINTS (143 co-mentions), AFFORDABILITY + FOOD_INSECURITY (120 co-mentions).</li>
+        
+        <li>Biggest stress gaps → Household: STRESS_BURNOUT +7.6 stress pts; Provider: STRESS_BURNOUT +8.4 stress pts.</li>
+        
+        <li>Food insecurity spikes by 43.8 pp when FOOD_INSECURITY is present.</li>
+        
+        <li>Simulated coder agreement averages 94% with κ=0.84.</li>
+        
+    </ul>
+
+    <h2>Exemplar Quotes</h2>
+    
+        <h3>Household voices</h3>
+        
+            
+                <blockquote>
+                    <strong>AFFORDABILITY (Wave 2, AL):</strong>
+                    No slots open when my shifts change, so reliable childcare access feels impossible. Food insecurity is creeping back—we rely on the pantry between paychecks. Tuition and fees are too expensive; every increase means cutting groceries.
+                </blockquote>
+            
+                <blockquote>
+                    <strong>CHILDCARE_ACCESS (Wave 1, GA):</strong>
+                    We have been on a childcare waitlist for months after our center closed. Short staffing means inconsistent caregivers and unpredictable schedules for us. My split shift schedule never aligns with the center&#39;s hours, so coverage falls apart.
+                </blockquote>
+            
+        
+    
+        <h3>Provider voices</h3>
+        
+            
+                <blockquote>
+                    <strong>AFFORDABILITY (Wave 3, IL):</strong>
+                    Operating costs skyrocket but families cannot absorb more tuition. I am overwhelmed balancing paperwork, families, and the classroom without relief. Families need nights and weekend coverage, but we cannot stretch schedules without burning out staff.
+                </blockquote>
+            
+                <blockquote>
+                    <strong>EMPLOYMENT_DISRUPTION (Wave 2, OH):</strong>
+                    Assistants quit when schedules change, so my employment feels precarious too. Keeping care affordable while paying staff fairly is nearly impossible. Food budgets for the program are maxed out while families ask for extra meals.
+                </blockquote>
+            
+        
+    
+
+    <h2>Reliability</h2>
+    <p>## Reliability overview
+Average percent agreement: 94.36%.
+
+Average Cohen&#39;s kappa: 0.84. Lowest agreement on PROVIDER_STAFF_SHORTAGE (κ=0.68).
+Simulated coder 2 flips 5–8% of labels to mimic human noise; real coder studies recommended before deployment.
+</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Theme</th>
+                <th>Percent agreement</th>
+                <th>Cohen's kappa</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td>AFFORDABILITY</td>
+                <td>92%</td>
+                <td>0.83</td>
+            </tr>
+            
+            <tr>
+                <td>CHILDCARE_ACCESS</td>
+                <td>96%</td>
+                <td>0.90</td>
+            </tr>
+            
+            <tr>
+                <td>EMPLOYMENT_DISRUPTION</td>
+                <td>95%</td>
+                <td>0.89</td>
+            </tr>
+            
+            <tr>
+                <td>FOOD_INSECURITY</td>
+                <td>92%</td>
+                <td>0.81</td>
+            </tr>
+            
+            <tr>
+                <td>PROVIDER_STAFF_SHORTAGE</td>
+                <td>95%</td>
+                <td>0.68</td>
+            </tr>
+            
+            <tr>
+                <td>SCHEDULING_CONSTRAINTS</td>
+                <td>95%</td>
+                <td>0.89</td>
+            </tr>
+            
+            <tr>
+                <td>STRESS_BURNOUT</td>
+                <td>95%</td>
+                <td>0.87</td>
+            </tr>
+            
+        </tbody>
+    </table>
+
+    <h2>Figures</h2>
+    <div class="figure-grid">
+        
+        <div class="figure-card">
+            <img src="figures/theme_frequencies_trend.png" alt="Theme frequencies across waves" />
+            <p><em>Theme frequencies across waves</em></p>
+        </div>
+        
+        <div class="figure-card">
+            <img src="figures/theme_cooccurrence_heatmap.png" alt="Theme co-occurrence heatmap" />
+            <p><em>Theme co-occurrence heatmap</em></p>
+        </div>
+        
+        <div class="figure-card">
+            <img src="figures/mixed_methods_theme_vs_stress.png" alt="Stress score gap by theme" />
+            <p><em>Stress score gap by theme</em></p>
+        </div>
+        
+    </div>
+
+    <footer>
+        <p>Generated automatically via rule-based coding, mixed-methods synthesis, and deterministic seeds (2026-01-22 03:45 UTC).</p>
+    </footer>
+</body>
+</html>
