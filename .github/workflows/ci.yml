@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  push:
+    branches: ["main", "master"]
+  pull_request:
+    branches: ["main", "master"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+            python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r qualitative_mixed_methods/requirements.txt
+          pip install Jinja2
+
+      - name: Run pipeline smoke test
+        run: |
+          python qualitative_mixed_methods/src/run_pipeline.py --responses 500 --waves 3 --seed 42
+
+      - name: Run tests
+        run: |
+          python -m pytest -q qualitative_mixed_methods/tests/test_coding_pipeline.py
