@@ -21,13 +21,12 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r qualitative_mixed_methods/requirements.txt
-          pip install Jinja2
+          pip install -r requirements.txt
 
       - name: Run pipeline smoke test
         run: |
-          python qualitative_mixed_methods/src/run_pipeline.py --responses 500 --waves 3 --seed 42
+          python src/run_pipeline.py --responses 500 --waves 3 --seed 42
 
       - name: Run tests
         run: |
-          python -m pytest -q qualitative_mixed_methods/tests/test_coding_pipeline.py
+          python -m pytest -q tests/test_coding_pipeline.py
